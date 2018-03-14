@@ -1,0 +1,16 @@
+<header class= "navbar navbar-fixed-top navbar-inverse">
+  <div class= "container">
+    <div class="navbar-header">
+      <%=link_to "Home", root_path, id:"logo", class: "navbar-brand"%>
+    </div>
+    <nav>
+      <ul class= "nav navbar-nav navbar-right">
+        <li><%=link_to "Ver Todo", ''%></li>
+        <!---ESTABLECER CONDICIONES SOBRE EL TIPO DE USER PARA EL LISTADO-->
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <%= yield %>
+</div>
