@@ -1,0 +1,26 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @noticium.titulo %>
+</p>
+
+<p>
+  <strong>Bajada:</strong>
+  <%= @noticium.bajada %>
+</p>
+
+<p>
+  <strong>Cuerpo:</strong>
+  <%= @noticium.cuerpo %>
+</p>
+
+<br>
+<h2><%=@noticium.comments.count%> Comments</h2>
+
+<%=render 'comments/form'%>
+
+<br>
+
+<%=render @noticium.comments%>
