@@ -5,12 +5,11 @@
     </div>
     <nav>
       <ul class= "nav navbar-nav navbar-right">
-        <li><%=link_to "Ver Todo", ''%></li>
+        <li><%=link_to "SIGN UP", new_user_registration_path%></li>
+        <li><%=link_to "LOG IN", new_user_session_path%></li>
+        <li><%=link_to "LOG OUT", destroy_user_session_path, method: :delete%>
         <!---ESTABLECER CONDICIONES SOBRE EL TIPO DE USER PARA EL LISTADO-->
       </ul>
     </nav>
   </div>
 </header>
-<div class="container">
-  <%= yield %>
-</div>
