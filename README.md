@@ -2,6 +2,11 @@
 # IntegracionTareas
 Tareas de Taller de Ingracion
 =======
+
+
+CUENTA ADMIN:
+mesilava2@uc.cl
+pass: asdf1234
 # README
 
 This README would normally document whatever steps are necessary to get the

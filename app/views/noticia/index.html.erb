@@ -15,7 +15,7 @@
     <% @noticia.each do |noticium| %>
       <tr>
         <td><%= noticium.titulo %></td>
-        <td><%= noticium.bajada %></td>
+        <td><%= noticium.created_at %></td>
         <td><%= link_to 'Show', noticium %></td>
         <td><%= link_to 'Edit', edit_noticium_path(noticium) %></td>
         <td><%= link_to 'Destroy', noticium, method: :delete, data: { confirm: 'Are you sure?' } %></td>

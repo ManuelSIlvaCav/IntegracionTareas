@@ -8,7 +8,7 @@ class NoticiaController < ApplicationController
       flash[:notice] = "Debes ser admin para ingresar aqui"
       redirect_to root_path
     end
-    @noticia = Noticium.all
+    @noticia = Noticium.order(created_at: :desc)
   end
 
   # GET /noticia/1

@@ -1,2 +1,7 @@
-<%=comment.nombre%>
-<%=comment.content%>
+<%if comment%>
+<h2><%=comment.nombre%></h2><h6>Wroted: <%=comment.created_at%></h6>
+<br>
+<h5><%=comment.content%></h5>
+
+<hr>
+<%end%>
