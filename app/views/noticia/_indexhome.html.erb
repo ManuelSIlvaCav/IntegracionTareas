@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card text-white bg-info mb-3">
+      <div class="header"><h3><%=@noticias[1].titulo%> (<%=@noticias[1].comments.count%>)</h3></div>
+      <div class="card-body">
+        <h5 class="card-title"><%=@noticias[1].bajada%></h5>
+        <p class="card-text"><%=shorten(@noticias[1].cuerpo)%></p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="btn btn-success">Another link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-info mb-3">
+      <div class="header"><h3><%=@noticias[2].titulo%> (<%=@noticias[2].comments.count%>)</h3></div>
+      <div class="card-body">
+        <h5 class="card-title"><%=@noticias[2].bajada%></h5>
+        <p class="card-text"><%=shorten(@noticias[2].cuerpo)%></p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="btn btn-success">Another link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-white bg-info mb-3">
+      <div class="header"><h3><%=@noticias[3].titulo%> (<%=@noticias[3].comments.count%>)</h3></div>
+      <div class="card-body">
+        <h5 class="card-title"><%=@noticias[3].bajada%></h5>
+        <p class="card-text"><%=shorten(@noticias[3].cuerpo)%></p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="btn btn-success">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>

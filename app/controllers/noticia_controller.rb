@@ -11,6 +11,7 @@ class NoticiaController < ApplicationController
     @noticia = Noticium.order(created_at: :desc)
   end
 
+  
   # GET /noticia/1
   # GET /noticia/1.json
   def show
