@@ -1,27 +1,16 @@
-<%@contador = 0%>
-<%4.times do |fila|%>
-  <div class="row">
-    <%3.times do |col|%>
-      <div class="col-sm-4">
-        <div class="card text-white bg-info mb-3">
-          <div class="header"><h3><%=@noticias[@contador].titulo%> (<%=@noticias[@contador].comments.count%>)</h3></div>
-          <div class="card-body">
-            <h5 class="card-title"><%=@noticias[@contador].created_at%><hr><%=@noticias[@contador].bajada%></h5>
-            <p class="card-text"><%=shorten(@noticias[@contador].cuerpo)%></p>
-            <div class="row">
-              <div class = "col-sm-6">
-                <%=link_to "READ MORE..", noticium_path(@noticias[@contador])%>
-              </div>
-
-            </div>
-
-          </div>
+  <div class="card-columns">
+    <%@noticias.limit(10).each do |noticia|%>
+      <div class="card" style="max-width: 25rem;">
+        <div class="card-header">
+          <h3><%=noticia.titulo%> (<%=noticia.comments.count%>)</h3>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= noticia.created_at%><hr><%=noticia.bajada%></h5>
+          <p class="card-text"><%=shorten(noticia.cuerpo)%></p>
+        </div>
+        <div class="card-footer text-muted">
+          <%=link_to "READ MORE..", noticium_path(noticia)%>
         </div>
       </div>
-      <%@contador = @contador +1%>
-      <%if @contador > 9 %>
-        <%break%>
-      <%end%>
     <%end%>
   </div>
-<%end%>

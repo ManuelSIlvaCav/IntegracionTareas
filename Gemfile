@@ -13,9 +13,10 @@ gem 'pg', '~> 0.18'
 
 
 ##GEMAS
-gem 'bootstrap-sass'
 gem 'devise'
 gem 'faker'
+gem 'sprockets-rails', '>= 2.3.2'
+gem 'bootstrap', '~> 4.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

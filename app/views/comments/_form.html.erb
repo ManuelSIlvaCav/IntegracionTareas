@@ -1,11 +1,9 @@
 
 <%=form_for ([@noticium, @noticium.comments.build]) do |f|%>
-<% if @comment_build[0].errors.any? %>
 
-<% end %>
   <div class="field">
     <%= f.label :nombre %>
-    <%= f.text_field :nombre %>
+    <%= f.text_field :nombre, required: true %>
   </div>
 
   <div class="field">
