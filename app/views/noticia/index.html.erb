@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Noticias</h1>
+<%= link_to 'New Noticium', new_noticium_path , class:"btn btn-success"%>
+
 
 <table class="table">
   <thead>
@@ -17,13 +19,9 @@
         <td><%= noticium.titulo %></td>
         <td><%= noticium.created_at %></td>
         <td><%= link_to 'Show', noticium %></td>
-        <td><%= link_to 'Edit', edit_noticium_path(noticium) %></td>
-        <td><%= link_to 'Destroy', noticium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_noticium_path(noticium), class: "btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', noticium, method: :delete, class:"btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Noticium', new_noticium_path , class:"btn btn-success"%>

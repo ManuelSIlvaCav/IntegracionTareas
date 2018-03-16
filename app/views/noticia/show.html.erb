@@ -21,5 +21,6 @@
 <%=render 'comments/form'%>
 
 <br>
-
-<%=render @noticium.comments%>
+<%if @noticium.comments.any?%>
+  <%=render @noticium.comments%>
+<%end%>
