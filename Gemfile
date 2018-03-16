@@ -13,6 +13,7 @@ gem 'pg', '~> 0.18'
 
 
 ##GEMAS
+gem 'bootstrap'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'faker'

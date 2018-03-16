@@ -1,4 +1,14 @@
-<header class= "navbar navbar-fixed-top navbar-inverse">
+<header class= "navbar navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
   <div class= "container">
     <div class="navbar-header">
       <%=link_to "Home", root_path, id:"logo", class: "navbar-brand"%>
@@ -8,6 +18,7 @@
         <%if !admin_signed_in? %>
           <li><%=link_to "LOG IN ADMIN", new_admin_session_path%></li>
         <%else%>
+          <li><%=link_to "ADMINISTRACION", noticia_path%></li>
           <li><%=link_to "LOG OUT", destroy_admin_session_path, method: :delete%>
         <%end%>
         <!---ESTABLECER CONDICIONES SOBRE EL TIPO DE USER PARA EL LISTADO-->
