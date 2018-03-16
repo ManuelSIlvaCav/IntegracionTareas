@@ -7,7 +7,7 @@
           <div class="header"><h3><%=@noticias[@contador].titulo%> (<%=@noticias[@contador].comments.count%>)</h3></div>
           <div class="card-body">
             <h5 class="card-title"><%=@noticias[@contador].created_at%><hr><%=@noticias[@contador].bajada%></h5>
-            <p class="card-text"><%=shorten(@noticias[@contador].cuerpo)%></p>
+            <p class="card-text"><%=@noticias[@contador].truncar%></p>
             <div class="row">
               <div class = "col-sm-6">
                 <%=link_to "READ MORE..", noticium_path(@noticias[@contador])%>

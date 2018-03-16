@@ -1,12 +1,15 @@
 <<<<<<< HEAD
 # IntegracionTareas
-Tareas de Taller de Ingracion
+Tareas de Taller de Integracion
 =======
 
 
 CUENTA ADMIN:
 mesilava2@uc.cl
 pass: asdf1234
+
+PAGINA WEB:
+https://infinite-thicket-24573.herokuapp.com/
 # README
 
 This README would normally document whatever steps are necessary to get the
